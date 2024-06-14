@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebRTC Chat</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>WebRTC Chat</h1>
+  <div>
+    <label for="room-id">Room ID:</label>
+    <input type="text" id="room-id" value="123">
+    <button id="join-room">Join Room</button>
+  </div>
+  <div>
+    <video id="local-video" autoplay muted></video>
+    <video id="remote-video" autoplay></video>
+  </div>
+</body>
+</html>
